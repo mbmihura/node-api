@@ -7,7 +7,10 @@ var mongoose = require('mongoose');
 var app      = express();
 
 var port     = process.env.PORT || 8080; // set our port
-mongoose.connect('mongodb://node:node@novus.modulusmongo.net:27017/Iganiq8o'); // connect to our database
+
+// DATABASE SETUP
+mongoose.connect('mongodb://localhost:27017/test'); // connect to our database
+
 
 // ROUTES FOR OUR API
 // =============================================================================
